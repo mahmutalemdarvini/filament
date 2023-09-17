@@ -13,7 +13,7 @@ dependencies {
     implementation deps.androidx.annotations
 }
 
-apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+apply from: project.file('../gradle/gradle-mvn-push.gradle')
 
 afterEvaluate { project ->
     publishing {

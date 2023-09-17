@@ -40,11 +40,11 @@ dependencies {
     implementation deps.coroutines.core
     implementation deps.coroutines.android
 
-    api project(':filament-android')
-    api project(':gltfio-android')
+    api project(':filament:filament-android')
+    api project(':filament:gltfio-android')
 }
 
-apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+apply from: project.file('../gradle/gradle-mvn-push.gradle')
 
 afterEvaluate {
     publishing {
